@@ -68,5 +68,5 @@ class Calculator:
         return self.result
 
     def square_root(self, a):
-        self.result = round(sqrt(a), 9)
+        self.result = round(sqrt(a), 11)
         return self.result
