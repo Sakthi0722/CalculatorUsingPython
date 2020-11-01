@@ -22,7 +22,13 @@ def multiplication(a, b):
 def division(a, b):
     a = int(a)
     b = int(b)
-    c = float(b/a)
+    c = float(b / a)
+    return c
+
+
+def square(a):
+    a = int(a)
+    c = a * a
     return c
 
 
@@ -46,4 +52,8 @@ class Calculator:
 
     def divide(self, a, b):
         self.result = round(division(a, b), 9)
+        return self.result
+
+    def squares(self, a):
+        self.result = square(a)
         return self.result
