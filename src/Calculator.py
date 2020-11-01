@@ -45,5 +45,5 @@ class Calculator:
         return self.result
 
     def divide(self, a, b):
-        self.result = round(division(a, b), 10)
+        self.result = division(a, b)
         return self.result
