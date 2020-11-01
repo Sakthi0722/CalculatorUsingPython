@@ -19,6 +19,13 @@ def multiplication(a, b):
     return c
 
 
+def division(a, b):
+    a = int(a)
+    b = int(b)
+    c = float(b/a)
+    return c
+
+
 class Calculator:
     result = 0
 
@@ -35,4 +42,8 @@ class Calculator:
 
     def multiply(self, a, b):
         self.result = multiplication(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = round(division(a, b), 9)
         return self.result
