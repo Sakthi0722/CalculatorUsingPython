@@ -45,7 +45,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("src/Unit Test Square Root.csv").data
         for row in test_data:
             self.assertEqual(self.calculator.square_root(row['Value 1']), float(row['Result']))
-            self.assertEqual(self.calculator.result, float(row['Result']))
+            self.assertEqual(self.calculator.result, round(float(row['Result']), 7))
 
 
 if __name__ == '__main__':
