@@ -33,7 +33,7 @@ class MyTestCase(unittest.TestCase):
         test_data = CsvReader("src/Unit Test Division.csv").data
         for row in test_data:
             self.assertEqual(self.calculator.divide(row['Value 1'], row['Value 2']), int(row['Result']))
-            self.assertEqual(self.calculator.result, int(row['Result']))
+            self.assertEqual(self.calculator.result, float(row['Result']))
 
 
 if __name__ == '__main__':
